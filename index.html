@@ -5,9 +5,157 @@
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>petShop</title>
+<style>
+#navbar ul{
+
+          display: none;
+          background-color: white;
+          position: absolute;
+          top: 100%;
+        }
+        #navbar li:hover ul { display: block; }
+        #navbar, #navbar ul{
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+        #navbar {
+          height: 40px;
+          background-color: transparent;
+          padding-left: 25px;
+          min-width: 470px;
+        }
+        #navbar li {
+        font-size: 24px;
+        display:inline-block;
+          position: relative;
+          height: 100%;
+        }
+        #navbar li a {
+          display: block;
+          padding: 6px;
+          width: 200px;
+          color: black;
+          border: 1px solid black;
+          text-decoration: none;
+          text-align: center;
+        }
+        #navbar a:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #fff8dc;
+            transition: all .35s;
+          }
+        #navbar ul li { float: none; }
+        #navbar li:hover { background-color: transparent }
+        #navbar ul li:hover { background-color: white; }
+        #navbar li a:hover:after{
+            width: 100%;
+          }
+
+          #navbar li a span{
+            position: relative;
+            z-index: 2;
+          }
+          #navbar li a span:hover{
+            position: relative;
+            z-index: 2;
+          }
+          .footer {
+            background-color: #fff8dc;
+             position: fixed;
+             right: 0;
+             bottom: 0;
+             text-align: left; 
+             width: 101%;   
+             font-size: 19px;
+          font-weight: bold;
+            color: gray;  
+           }
+
+           .circ{
+            position: fixed;
+             right: 2%;
+             bottom: 7%;
+           }
+           div.card{
+            float:left; 
+            margin-top: 30px;
+            margin-right: 25px;
+            margin-left: 25px;
+            font-style: 16px;
+            font-family: Arial, Helvetica, "sans-serif";
+            border: 3px solid gray;
+            width: 200px;
+            height: 250px;
+            border-radius: 3%;
+        }
+        .nd{
+          position: fixed;
+          right: 0;
+           width: 100%;
+          bottom: 100px;
+         }
+</style>
 </head>
 <body>
    <h1>Оно должно рабоать? </h1>
- 	
+ 	<div align="center" style="margin-top: 0px;">
+        <ul id="navbar">
+            <li><a href="#"><span>Главная</span></a></li>
+            <li><a href="#"><span>Кошки</span></a>
+              <ul>
+                <li><a href="#"><span>Еда</span></a></li>
+                <li><a href="#"><span>Туалеты</span></a></li>
+                <li><a href="#"><span>Остальное</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Собаки</span></a>
+             <ul>
+                <li><a href="#"><span>Еда</span></a> </li>
+                <li><a href="#"><span>Туалеты</span></a></li>
+                <li><a href="#"><span>Остальное</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Котята и щенки</span></a>
+            <ul>
+                <li><a href="#"><span>Еда</span></a></li>
+                <li><a href="#"><span>Туалеты</span></a></li>
+                <li><a href="#"><span>Остальное</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Другие питомцы</span></a></li>
+            <li><a href="#"><span>Вет.аптека</span></a></li>
+            <li><a href="#"><span>Акции</span></a></li>
+          </ul>
+    </div>
+    </div> <div class="card"> 
+        <p align="right" style="margin-right: 10px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+              </svg>
+        </p>
+        
+    <div class="nd">
+        <ul id="navbar">
+        <center>
+            <li><a href="#"><span>Х</span></a></li>
+            <li><a href="#"><span>Следующая</span></a></li>
+          </ul>
+        </center>
+    </div>
+    <div class="circ">
+        <svg style="margin-bottom: -20px"viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle fill="#50c878" cx="50" cy="50" r="30" />
+          </svg> 
+          Поддержка         
+    </div>
+    <div class="footer">
+        <p style="margin-left: 20px;">© 2024 tg: @hiikkarii</p>
+      </div>
 </body>
 </html>
